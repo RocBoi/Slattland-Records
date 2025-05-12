@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Slattland Records — A luxury music label building million-dollar sound for the next generation of legends.">
+  <meta name="keywords" content="Slattland Records, hip-hop, RocBoi Quez, music label, luxury sound, Atlanta">
+  <meta name="author" content="Slattland Records LLC" />
+  <title>Slattland Records | Millionaire Sound</title>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #000;
+      --gold: #d4af37;
+      --accent: #1a1a1a;
+      --text: #fff;
+    }
 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Unbounded', sans-serif;
+      background: var(--primary);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    header {
+      background: var(--accent);
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 2px solid var(--gold);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: var(--gold);
+      letter-spacing: 2px;
+    }
+
+    nav {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 6rem 2rem;
+      background: linear-gradient(to right, #0a0a0a, #111);
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background: var(--gold);
+      color: #000;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #b38e2e;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 4rem;
+      color: var(--gold);
+    }
+
+    .media {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+    }
+
+    .media-card {
+      background: var(--accent);
+      border: 1px solid var(--gold);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+
+    .media-card:hover {
+      transform: scale(1.02);
+    }
+
+    .media-card iframe, .media-card img {
+      width: 100%;
+      height: 200px;
+      display: block;
+    }
+
+    .media-card .content {
+      padding: 1rem;
+    }
+
+    .media-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: var(--gold);
+    }
+
+    .media-card p {
+      font-size: 0.95rem;
+      color: #bbb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--accent);
+      font-size: 0.9rem;
+      color: #888;
+      border-top: 1px solid var(--gold);
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Slattland Records</h1>
+    <nav>
+      <a href="#artists">Artists</a>
+      <a href="#music">Music</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>The Richest Sound in the Game</h2>
+    <p>Built from Atlanta’s heart and made for the world. Slattland Records represents luxury, hustle, and pure hip-hop power.</p>
+    <a href="#music" class="cta-button">Watch Now</a>
+  </section>
+
+  <h2 class="section-title" id="music">Featured Releases</h2>
+
+  <section class="media">
+    <div class="media-card">
+      <iframe src="https://www.youtube.com/embed/-AhFo0TsuPc" title="RocBoi Quez - Official Music Video" frameborder="0" allowfullscreen></iframe>
+      <div class="content">
+        <h3>RocBoi Quez – Digest It Pass It</h3>
+        <p>Powerful visuals, ATL storytelling. Directed with million-dollar vision.</p>
+      </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Slattland Records LLC. Designed for impact. Powered by the culture.
+  </footer>
+
+</body>
+</html>
