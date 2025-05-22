@@ -32,3 +32,8 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.media-card').forEach(card => {
   observer.observe(card);
 });
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js')
+    .then(() => console.log('Service Worker registered successfully'))
+    .catch(err => console.error('Service Worker registration failed:', err));
+}
