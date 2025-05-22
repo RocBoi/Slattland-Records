@@ -1,35 +1,65 @@
 <!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Slattland Records - The future of sound. Discover RocBoi Quez and other breakthrough artists." />
   <title>Slattland Records</title>
   <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
-</head><body>
-  <header class="site-header">
-    <div class="logo-container">
-      <img src="Picsart_25-04-30_03-58-16-923.jpg" alt="Slattland Records Logo" class="logo">
-    </div>
-  </header>  <nav class="navbar">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#artists">Artists</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>  <section id="home" class="hero">
-    <h1>Welcome to Slattland Records</h1>
-    <p>Home of independent greatness. Crafted by vision. Defined by sound.</p>
-  </section>  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>Founded in 2020, Slattland Records is redefining independent artistry by nurturing raw talent and releasing genre-defying sounds that speak to the streets, the culture, and the world.</p>
-  </section>  <section id="artists" class="artists">
-    <h2>Our Artists</h2>
-    <ul class="artist-list">
-      <li><a href="#rocboi-quez" onclick="showArtist('rocboi-quez')">RocBoi Quez</a></li>
-    </ul><div id="rocboi-quez" class="artist-profile hidden">
-  <h3>RocBoi Quez</h3>
-  <p>Introducing RocBoi Quez, the heart of Slattland’s underground flame and a voice for the streets of Atlanta. With raw authenticity, gritty lyricism, and a style carved from the trials of life, Quez is setting the tone for a new era in hip-hop.</p>
-  <p>His upcoming single, <strong>"Stairs or Window"</strong>, is a self-distributed masterpiece via TuneCore and self-published under G Code Publishing
+  <style>
+    .logo {
+      width: 180px;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+      transition: transform 0.3s ease-in-out;
+    }.logo:hover {
+  transform: scale(1.05);
+}
 
-    
+@media (max-width: 768px) {
+  .logo {
+    width: 120px;
+  }
+}
+
+  </style>
+</head><body>
+  <header>
+    <img src="Picsart_25-04-30_03-58-16-923.jpg" alt="Slattland Records Logo" class="logo" />
+    <h1>Slattland Records</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#artists">Artists</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>  <main>
+    <section id="home">
+      <h2>Welcome to Slattland Records</h2>
+      <p>Where music meets culture, and talent becomes legacy.</p>
+    </section><section id="artists">
+  <h2>Our Artists</h2>
+  <ul>
+    <li><a href="#rocboi-quez">RocBoi Quez</a></li>
+  </ul>
+</section>
+
+<section id="rocboi-quez">
+  <h2>RocBoi Quez</h2>
+  <p>RocBoi Quez is a dynamic force in the hip-hop scene, emerging from Atlanta with a gritty style and a story that resonates. Known for his raw lyrics and undeniable presence, Quez is set to release his powerful new single “Stairs or Window.” Self-distributed through Tunecore and self-published under G Code Publishing, the single reflects the struggle between elevation and escape, a metaphorical look into choices and survival. RocBoi Quez is more than an artist—he’s a movement.</p>
+</section>
+
+<section id="about">
+  <h2>About Slattland Records</h2>
+  <p>Established in 2020, Slattland Records is an independent label dedicated to discovering, promoting, and elevating the next generation of music pioneers.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email us at contact@slattlandrecords.com</p>
+</section>
+
+  </main>  <footer>
+    <p>&copy; 2025 Slattland Records. All rights reserved.</p>
+  </footer>  <script src="script.js"></script></body></html>
