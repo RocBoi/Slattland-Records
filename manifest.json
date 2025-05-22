@@ -22,9 +22,21 @@
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any maskable"
+    },
+    {
+      "src": "/Slattland-Records/Slattland-logo 192x192.jpeg",
+      "type": "image/jpeg",
+      "sizes": "192x192",
+      "purpose": "any"
     }
   ],
-  "categories": ["music", "hip-hop", "rap", "entertainment", "urban culture"],
+  "categories": [
+    "music",
+    "hip-hop",
+    "rap",
+    "entertainment",
+    "urban culture"
+  ],
   "screenshots": [
     {
       "src": "/screenshots/homepage.png",
