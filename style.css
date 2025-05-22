@@ -231,3 +231,34 @@ footer {
     gap: 1rem;
   }
 }
+.header-with-video {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.logo-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.site-logo {
+  width: 120px;
+  height: auto;
+}
