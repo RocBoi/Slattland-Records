@@ -19,6 +19,12 @@ const observer = new IntersectionObserver(entries => {
       entry.target.classList.add('show');
     }
   });
+  document.querySelectorAll('.youtube-facade').forEach(el => {
+  el.addEventListener('click', () => {
+    const videoId = el.getAttribute('data-id');
+    el.innerHTML = `<iframe width="100%" height="315" src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>`;
+  });
+});
 }, {
   threshold: 0.1
 });
