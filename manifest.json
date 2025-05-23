@@ -1,11 +1,11 @@
 {
-  "name": "Slattland Records™ - Hip-Hop Royalty & Urban Culture",
+  "name": "Slattland Records™ – Hip-Hop Royalty & Timeless Swagger",
   "short_name": "Slattland™",
-  "description": "Official site of Slattland Records™ - Discover the rawest hip-hop artistry, exclusive drops, and future icons of the culture.",
+  "description": "Crowned in gold. Slattland Records™ delivers elite hip-hop culture, legendary flows, and exclusive street-luxury music drops.",
   "start_url": "/index.html",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#000000",
+  "background_color": "#0c0c0c",
   "theme_color": "#d4af37",
   "orientation": "portrait",
   "lang": "en-US",
@@ -24,7 +24,7 @@
       "purpose": "any maskable"
     },
     {
-      "src": "/Slattland-Records/Slattland-logo 192x192.jpeg",
+      "src": "/Slattland-Records/Slattland-logo-192x192.jpeg",
       "type": "image/jpeg",
       "sizes": "192x192",
       "purpose": "any"
@@ -35,20 +35,21 @@
     "hip-hop",
     "rap",
     "entertainment",
-    "urban culture"
+    "urban culture",
+    "luxury"
   ],
   "screenshots": [
     {
       "src": "/screenshots/homepage.png",
       "type": "image/png",
       "sizes": "1280x720",
-      "label": "Homepage"
+      "label": "Slattland Records™ – Home of the Culture"
     },
     {
       "src": "/screenshots/artist-profile.png",
       "type": "image/png",
       "sizes": "1280x720",
-      "label": "Artist Profile"
+      "label": "Artist Profile – RocBoi Quez, Certified Icon"
     }
   ],
   "related_applications": [],
