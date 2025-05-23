@@ -1,23 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset 
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
+
+  <!-- Root - The Gold Carpet Entry -->
   <url>
     <loc>https://slattlandrecords.info/</loc>
     <lastmod>2025-05-22</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
 
+  <!-- Artist Roll Call - Hall of Fame Presence -->
   <url>
     <loc>https://slattlandrecords.info/#artists</loc>
     <lastmod>2025-05-22</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
 
+  <!-- RocBoi Quez - Frontline Icon of Slattland -->
   <url>
     <loc>https://slattlandrecords.info/rocboiquez</loc>
     <lastmod>2025-05-22</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.95</priority>
+  </url>
+
+  <!-- Stream & Drops -->
+  <url>
+    <loc>https://slattlandrecords.info/#releases</loc>
+    <lastmod>2025-05-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Legacy & Vision -->
+  <url>
+    <loc>https://slattlandrecords.info/#about</loc>
+    <lastmod>2025-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
 
 </urlset>
