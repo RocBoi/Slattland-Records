@@ -70,7 +70,18 @@ body {
   background-color: #ff4444;
   transform: scale(1.05);
 }
+/* Hidden state for reveal elements */
+.media-card, #new-release {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
 
+/* Show on scroll */
+.media-card.show, #new-release.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 /* Optional: smooth fade-up animation */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(30px); }
