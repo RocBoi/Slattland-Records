@@ -1,264 +1,82 @@
-/* Font and color variables */
-:root {
-  --primary: #000;
-  --gold: #ffd700;
-  --accent: #111;
-  --text: #fff;
-  --glow: #ffcc00;
-}
-
-/* Reset & base */
-* {
+/* Global Styles */
+body {
+  background-color: #0b0b0b;
+  color: #eaeaea;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  line-height: 1.6;
 }
 
-body {
-  font-family: 'Unbounded', sans-serif;
-  background: var(--primary);
-  color: var(--text);
-  overflow-x: hidden;
-  line-height: 1.7;
+/* Section: New Release */
+#new-release {
+  padding: 3rem 2rem;
+  background: linear-gradient(145deg, #121212, #1e1e1e);
+  color: #fefefe;
+  max-width: 960px;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.1);
 }
 
-/* Header */
-header {
-  background: var(--accent);
-  padding: 2.5rem 1rem;
-  text-align: center;
-  border-bottom: 4px solid var(--gold);
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+/* Heading */
+#new-release h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #ffd700; /* Gold elegance */
+  font-weight: bold;
+  text-shadow: 1px 1px 4px #000;
 }
 
-header h1 {
-  font-size: 3.5rem;
-  color: var(--gold);
-  letter-spacing: 3px;
-  text-shadow: 0 0 10px var(--glow);
-  font-weight: 900;
+/* Image styling */
+#new-release img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
 }
 
-/* Navigation */
-nav {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  gap: 2.5rem;
+/* Article text */
+#new-release article p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 1.2rem;
 }
 
-nav a {
+#new-release strong {
+  color: #ffda44;
+}
+
+#new-release em {
+  font-style: italic;
+  color: #ff8c00;
+}
+
+/* Button styling */
+#new-release a {
+  display: inline-block;
+  background-color: #c62828;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
   text-decoration: none;
-  color: var(--text);
   font-weight: bold;
   font-size: 1.1rem;
-  transition: color 0.3s, text-shadow 0.3s;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-nav a:hover {
-  color: var(--gold);
-  text-shadow: 0 0 8px var(--gold);
-}
-
-/* Hero section */
-.hero {
-  text-align: center;
-  padding: 6rem 2rem;
-  background: linear-gradient(to right, #0a0a0a, #1a1a1a);
-  border-top: 2px solid var(--gold);
-  border-bottom: 2px solid var(--gold);
-}
-
-.hero h2 {
-  font-size: 3.2rem;
-  color: var(--gold);
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-shadow: 0 0 10px #d4af37;
-}
-
-.hero p {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 1.25rem;
-  color: #ccc;
-}
-
-.cta-button {
-  display: inline-block;
-  margin-top: 2rem;
-  padding: 1rem 2.5rem;
-  background: var(--gold);
-  color: #000;
-  font-weight: bold;
-  border-radius: 40px;
-  text-decoration: none;
-  transition: background 0.3s, transform 0.3s;
-  box-shadow: 0 0 12px rgba(255, 215, 0, 0.6);
-}
-
-.cta-button:hover {
-  background: #e6be00;
+#new-release a:hover {
+  background-color: #ff4444;
   transform: scale(1.05);
 }
 
-/* Section titles */
-.section-title {
-  text-align: center;
-  font-size: 2.2rem;
-  margin-top: 4rem;
-  color: var(--gold);
-  text-transform: uppercase;
-  text-shadow: 0 0 6px var(--glow);
+/* Optional: smooth fade-up animation */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* Media grid */
-.media {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  padding: 4rem 2rem;
-}
-
-.media-card {
-  background: #1a1a1a;
-  border: 1px solid var(--gold);
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  opacity: 0;
-  transform: translateY(30px);
-}
-
-.media-card.show {
-  opacity: 1;
-  transform: translateY(0);
-  box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
-}
-
-.media-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 40px rgba(255, 215, 0, 0.5);
-}
-
-.media-card iframe,
-.media-card img {
-  width: 100%;
-  height: 200px;
-  display: block;
-  object-fit: cover;
-}
-
-.media-card .content {
-  padding: 1.2rem;
-}
-
-.media-card h3 {
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
-  color: var(--gold);
-  text-shadow: 0 0 4px var(--glow);
-}
-
-.media-card p {
-  font-size: 1rem;
-  color: #aaa;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 2rem;
-  background: var(--accent);
-  font-size: 1rem;
-  color: #999;
-  border-top: 2px solid var(--gold);
-  box-shadow: 0 -2px 10px rgba(255, 215, 0, 0.1);
-}
-
-/* YouTube facade */
-.youtube-facade {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  margin: 3rem auto;
-  cursor: pointer;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
-}
-
-.youtube-thumb {
-  width: 100%;
-  display: block;
-}
-
-.play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.7);
-  color: var(--gold);
-  border: 2px solid var(--gold);
-  font-size: 2.5rem;
-  padding: 1rem 1.5rem;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 10px var(--gold);
-}
-
-.youtube-facade:hover .play-button {
-  background: rgba(255, 0, 0, 0.9);
-  color: #fff;
-  transform: translate(-50%, -50%) scale(1.1);
-}
-
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2.4rem;
-  }
-
-  .hero h2 {
-    font-size: 2rem;
-  }
-
-  nav {
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-}
-.header-with-video {
-  position: relative;
-  height: 300px;
-  overflow: hidden;
-}
-
-.bg-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  object-fit: cover;
-  filter: brightness(60%);
-}
-
-.logo-container {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  padding-top: 80px;
-}
-
-.site-logo {
-  width: 120px;
-  height: auto;
+#new-release {
+  animation: fadeUp 1s ease-out;
 }
